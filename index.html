@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HereIdeas</title>
+    <link rel="stylesheet" href="home page styles.css" />
+  </head>
+  <body>
+    <div class="description">
+      <h1>HereIdeas</h1>
+      <p>
+        Summarized Research peer-reviewed documents about topics related to the
+        field of technology
+      </p>
+
+      <div class="menu">
+        <button class="menu-button hover" onclick="showHome()">HOME</button>
+        <hr />
+        <button class="menu-button hover" onclick="showTopics()">TOPIC</button>
+        <hr />
+        <button class="menu-button hover" onclick="showAbout()">
+          ABOUT ME
+        </button>
+        <hr />
+        <button class="menu-button hover" onclick="showHelp()">HELP</button>
+      </div>
+    </div>
+
+    <div class="dropdown" id="dropdown">
+      <p>CHOOSE TOPIC</p>
+      <button
+        class="dropdown-button hover"
+        onclick="location.href='Computer Sciences.html';"
+      >
+        Computer Sciences
+      </button>
+      <button
+        class="dropdown-button hover"
+        onclick="location.href='Data, Information, and Information Systems.html';"
+      >
+        Data, Information, and Information Systems
+      </button>
+      <button
+        class="dropdown-button hover"
+        onclick="location.href='Number Systems.html';"
+      >
+        Number Systems
+      </button>
+      <button
+        class="dropdown-button hover"
+        onclick="location.href='Computer Hardware & Software.html';"
+      >
+        Computer Hardware & Software
+      </button>
+      <button
+        class="dropdown-button hover"
+        onclick="location.href='Motherboards.html';"
+      >
+        Motherboards
+      </button>
+      <button
+        class="dropdown-button hover"
+        onclick="location.href='Different types of computers.html';"
+      >
+        Different types of computers
+      </button>
+    </div>
+
+    <!-- About Me Section -->
+    <div class="aboutMe" id="aboutMe">
+      <p>ABOUT ME</p>
+      <p1>
+        Hi, I am Nicole Louise Heredia, currently studying in The University of
+        San Carlos in Talamban Campus in BS Information Technology as my course.
+        I am an 18-year-old first-year college student, aspiring to be
+        successful with innovative research that can contribute to the
+        advancement of modern technology.
+        <br /><br />
+        This website is derived from peer-reviewed articles regarding the
+        provided topic, simplified into comprehensive content as study material
+        for individuals unfamiliar with this field, and especially for students
+        in the field of technology as well. This website aims to guide and help
+        students by providing simple and digestible information on the provided
+        topics.
+      </p1>
+    </div>
+
+    <div class="help" id="help">
+      <p>HELP</p>
+      <p1>
+        1. HOME - Displays the original home page.<br />
+        2. TOPICS - Displays the topic options. Choose prefered topic can lead
+        you to a page containing the portfolio of that specific topic.<br />
+        3. ABOUT ME - Displays credentials and information about the creator.<br />
+        4. HELP - Displays Instructions.<br /><br />
+
+        TOPICS PAGE:<br />
+        1. Navigation is found at the topmost part of the page with only the
+        HOME and TOPICS keys.<br />
+        2. TOPICS keys will display a dropdown menu of the topics for you to
+        choose.<br />
+      </p1>
+    </div>
+
+    <script>
+      function showHome() {
+        document.querySelector("#dropdown").classList.remove("visible");
+        document.querySelector("#aboutMe").classList.remove("visible");
+        document.querySelector("#help").classList.remove("visible");
+        document.querySelector(".description").classList.remove("move-left");
+      }
+
+      function showTopics() {
+        document.querySelector("#aboutMe").classList.remove("visible");
+        document.querySelector("#help").classList.remove("visible");
+        document.querySelector(".description").classList.add("move-left");
+        document.querySelector("#dropdown").classList.add("visible");
+      }
+
+      function showAbout() {
+        document.querySelector("#dropdown").classList.remove("visible");
+        document.querySelector("#help").classList.remove("visible");
+        document.querySelector(".description").classList.add("move-left");
+        document.querySelector("#aboutMe").classList.add("visible");
+      }
+
+      function showHelp() {
+        document.querySelector("#dropdown").classList.remove("visible");
+        document.querySelector("#aboutMe").classList.remove("visible");
+        document.querySelector(".description").classList.add("move-left");
+        document.querySelector("#help").classList.add("visible");
+      }
+    </script>
+  </body>
+</html>

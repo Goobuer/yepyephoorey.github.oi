@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HereIdeas-Computer Sciences</title>
+    <link rel="stylesheet" href="p5 motherboard.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <h1><a href="index.html">HereIdeas</a></h1>
+      <nav>
+        <ul>
+          <li class="menu-button hover">
+            <a href="index.html">
+              ABOUT ME
+              <hr
+            /></a>
+          </li>
+          <li class="menu-button hover">
+            <a href="index.html">
+              HELP
+              <hr
+            /></a>
+          </li>
+
+          <li class="menu-item">
+            <button class="menu-button hover" onclick="toggleDropdown()">
+              TOPICS
+              <hr />
+            </button>
+
+            <div class="dropdown" id="dropdown">
+              <button
+                class="dropdown-button hover"
+                onclick="location.href='Computer Sciences.html';"
+              >
+                Computer Sciences
+              </button>
+              <button
+                class="dropdown-button hover"
+                onclick="location.href='Data, Information, and Information Systems.html';"
+              >
+                Data, Information, and Information Systems
+              </button>
+              <button
+                class="dropdown-button hover"
+                onclick="location.href='Number Systems.html';"
+              >
+                Number Systems
+              </button>
+              <button
+                class="dropdown-button hover"
+                onclick="location.href='Computer Hardware & Software.html';"
+              >
+                Computer Hardware & Software
+              </button>
+              <button
+                class="dropdown-button hover"
+                onclick="location.href='Motherboards.html';"
+              >
+                Motherboards
+              </button>
+              <button
+                class="dropdown-button hover"
+                onclick="location.href='Different types of computers.html';"
+              >
+                Different types of computers
+              </button>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Main Content Section -->
+    <div class="container">
+      <div class="heading">
+        <h2>Motherboards</h2>
+        <p1>
+          Motherboards have come a long way from the early days of computing.
+          According to Volle (2023), It is considered as the backbone of every
+          computer. Each motherboard varies in design, size, and especially
+          functionality which are tailored to satisfy or perform specific needs.
+          These may include compact systems, complex operations,
+          high-performance gaming servers, and many more. Selecting the right
+          motherboard for specific applications is very crucial which is
+          supported by the study of Paul (2021), thus, discussing these
+          different types of motherboards with various comparative studies is
+          necessary.
+        </p1>
+
+        <div class="boxes">
+          <div class="IS1">
+            <p3
+              ><b>
+                (1981) = IBM's 1981 motherboard<br /><br />
+                - The first modern motherboard appeared in IBM's Personal
+                Computer
+                <br />
+                - Originally called a "planar," <br />
+                - this revolutionary board housed the CPU, RAM, and basic audio,
+              </b></p3
+            >
+          </div>
+
+          <div class="IS2">
+            <p3
+              ><b>
+                (1984) - IBM AT (Advanced Technology)<br /><br />
+                - IBM introduced the AT motherboard<br />
+                - became a major milestone for component-based PCs. <br />
+                - The AT form factor was widely adopted by manufacturers,
+              </b></p3
+            >
+          </div>
+
+          <div class="IS3">
+            <p3
+              ><b>
+                (1987) - IBM's Baby AT<br /><br />
+                - Smaller, more case-friendly, and included I/O sockets,
+                becoming the most popular form factor. <br />
+                - more compatible with cases and included sockets for I/O ports
+              </b></p3
+            >
+          </div>
+
+          <div class="IS4">
+            <p3
+              ><b>
+                (1987) - LPX (Low Profile eXtension)<br /><br />
+                - Compact alternative with limited adoption compared to Baby
+                AT.<br />
+                - It featured a riser card to save space <br />
+                - had ports arranged differently than AT boards.
+              </b></p3
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="card card1">
+        <h3>MOTHERBOARDS: AT -> BTX -> E-ATX</h3>
+        <div class="more">
+          <p2>
+            = The AT motherboard was one of the first, but it’s old and too big
+            for today’s PCs.<br />
+            = The ATX motherboard replaced it and became super popular because
+            it’s easier to use and works better with modern parts. <br />
+            = The BTX motherboard was made for better cooling but didn’t catch
+            on much. <br />
+            = The Extended-ATX (E-ATX) is bigger than ATX and great for
+            high-performance computers because it has more room for extra parts.
+          </p2>
+        </div>
+      </div>
+
+      <div class="card card2">
+        <h3>MOTHERBOARDS: LPX -> Micr-ATX -> Mini-ITX</h3>
+        <div class="more">
+          <p2>
+            = The LPX motherboard was small and used in older PCs but had poor
+            cooling and isn’t used anymore.<br />
+            = The Micro-ATX motherboard is smaller than ATX but still works with
+            modern parts, making it good for budget PCs. <br />
+            = The Mini-ITX motherboard is tiny and used for small builds like
+            home theater PCs, but it doesn’t have much room for upgrades. <br />
+          </p2>
+        </div>
+      </div>
+
+      <div class="card card3">
+        <h3>MOTHERBOARDS: Mini-ATX -> Pico BTX -> Standard-ATX</h3>
+        <div class="more">
+          <p2>
+            = The Mini-ATX motherboard is rare and smaller than Micro-ATX,
+            mainly used for simple systems. <br />
+            = The Pico BTX motherboard is super small and good for tight spaces
+            but doesn’t have many features. <br />
+            = Lastly, the Standard-ATX motherboard is the most common because
+            it’s a good size and works well for most PCs. <br />
+          </p2>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <h4>Comparison Table of different model of Motherboards</h4>
+      <img
+        src="images/motherboard.JPG"
+        alt="DIfferences of Motherboards"
+        class="difference-motherboard"
+      />
+    </div>
+
+    <script>
+      function toggleDropdown() {
+        const dropdown = document.getElementById("dropdown");
+        dropdown.classList.toggle("visible");
+      }
+    </script>
+  </body>
+</html>
